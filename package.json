@@ -1,0 +1,18 @@
+{
+  "name": "chess_practice",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000C\u0000h\u0000e\u0000s\u0000s\u0000_\u0000P\u0000r\u0000a\u0000c\u0000t\u0000i\u0000c\u0000e\u0000\r\u0000 \u0000",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chess.js": "^1.0.0-beta.8",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "socket.io": "^4.7.5"
+  }
+}
