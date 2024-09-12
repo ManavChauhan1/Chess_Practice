@@ -18,7 +18,16 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-    res.render("index");
+    res.render("index", {title: "Chess Game"});
+})
+
+//Setting up Socket.io
+io.on("connection", function(uniquesocket){
+    console.log("connected");
+
+    uniquesocket.on("disconnect", function(){
+        console.log("Disconnected");
+    })
 })
 
 server.listen(3000, () => {
